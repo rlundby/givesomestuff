@@ -1,21 +1,20 @@
-import React, { Component, Fragment as F } from 'react';
+import React, { Component} from 'react';
 import './App.css';
-import Navigation from "./Components/Navigation";
-import Jumbatron from "./Components/Jumbatron";
-import Infobar from "./Components/Infobar";
-import MainContent from "./Components/Main Content";
+import {Switch, Route} from 'react-router-dom';
+import MainLayout from "./Components/Main Layout";
+import Login from "./Components/Login";
+import Verified from "./Components/Verified";
+import Habits from "./Components/Habits";
 
 class App extends Component {
   render() {
     return (
-        <F>
-            <Navigation/>
-            <Jumbatron/>
-            <Infobar/>
-            <MainContent/>
-    </F>
-
-
+        <Switch>
+            <Route exact path='/' component={MainLayout} />
+            <Route path='/login' component={Login}/>
+            <Route path='/90konto' component={Verified}/>
+            <Route path='/vanor' component={Habits}/>
+        </Switch>
     );
   }
 }

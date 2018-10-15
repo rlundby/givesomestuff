@@ -1,15 +1,27 @@
-import React, { Component, Fragment as F } from 'react';
-import { Organisations } from '../../../Mock/Organisations'
+import React, {Component, Fragment as F} from 'react';
+import {Organisations} from '../../../Mock/Organisations'
+import Organisation from "../Organisations/individual";
 
 export default class MainDisplay extends Component {
 
+    state = {
+        org: null
+    };
+
+    changeOrg(index) {
+        console.log('test');
+        let number = parseInt(index);
+        this.setState({
+            org: number
+        })
+    };
 
     render() {
-
-        const organisations =  Organisations[this.props.category];
-
+        let array = Organisations[this.props.category];
         let category;
-        switch(this.props.category) {
+
+
+        switch (this.props.category) {
             case 'animals':
                 category = 'Djur & Natur';
                 break;
@@ -35,33 +47,32 @@ export default class MainDisplay extends Component {
         return (
             <F>
                 <div className="container main-display card" id="test">
-                    <div className="row pb-3">
-                        <div className="col-12 align-center m-4">
-                            <h5 className="text-center">Välj en organisation i listan</h5>
+                    <div className="row pb-3 card-body">
+                        <div className="col-12 align-center m-4 card-title">
+                            <h5 className="text-center">Välj en organisation</h5>
                         </div>
                         <div className="col-md-4 col-xs-12">
                             <div className="list-group" id="list-tab" role="tablist">
                                 <a className="list-group-item list-group-item-action active" id="list-home-list"
                                    data-toggle="list" href="#list-home" role="tab" aria-controls="home">{category}</a>
-                                <a className="list-group-item list-group-item-action" id="list-profile-list"
-                                   data-toggle="list" href="#list-profile" role="tab"
-                                   aria-controls="profile">Organisation 1</a>
-                                <a className="list-group-item list-group-item-action" id="list-messages-list"
-                                   data-toggle="list" href="#list-messages" role="tab"
-                                   aria-controls="messages">Organisation 2</a>
-                                <a className="list-group-item list-group-item-action" id="list-settings-list"
-                                   data-toggle="list" href="#list-settings" role="tab"
-                                   aria-controls="settings">Organisation 3</a>
+                                {array.length > 0 ?  array.map((object, i) => {
+                                    return (
+                                    <button
+                                    href={'#' + i}
+                                    onClick={() => this.changeOrg(i)}
+                                    className="list-group-item list-group-item-action"
+                                    id={i}
+                                    key={i}>
+                                    {object.name}
+                                    </button>
+                                    )
+                                }) : <p>Det finns inga organisationer här just nu</p>}
                             </div>
                         </div>
-                        <div className="col-8">
-                            <p>Content</p>
-                        </div>
+                        { this.state.org !== null  ?  <Organisation details={array[this.state.org]} array={array}/> : <p>Välj en organisation i listan till vänster</p> }
                     </div>
                 </div>
             </F>
-
-
         )
     }
 }

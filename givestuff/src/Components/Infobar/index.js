@@ -24,7 +24,7 @@ export default class Infobar extends Component {
                     <div className="col-md-3 text-center">
                         <div className="service-box">
                             <h3>3.</h3>
-                            <p className="text-muted">Välj om det är en organisation du vill skänka pengar till eller inte.</p>
+                            <p className="text-muted">Bestäm dig för om det är en organisation du vill skänka pengar till eller inte.</p>
                         </div>
                     </div>
                 </div>

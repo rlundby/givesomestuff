@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(39, 79, 39, 0.98);
+  background: rgba(109, 134, 101, 0.98);
 }
 
 code {
@@ -15,11 +15,11 @@ code {
 }
 
 .heroImage {
-  background-image: url("/header.jpg");
+  background-image: url("https://images.pexels.com/photos/220116/pexels-photo-220116.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: black;
+  color: white;
 }
 
 .infobar {
@@ -42,3 +42,74 @@ code {
     background: white;
 }
 
+.main-display .row{
+    padding-top: 5px;
+}
+.main-display > .card-body > .card-title {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.checkbox-container {
+  background-color: whitesmoke;
+  border-radius: 5px 5px;
+  border: 1px solid lightgray;
+}
+.checkbox-container .col-md-6:first-child{
+    border-right: 1px solid lightgray;
+}
+.checkbox-container li {
+    align-items: baseline;
+}
+
+.checkbox {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+.checkbox i{
+  font-size: 45px;
+  color: #00c00b;
+}
+
+.checkbox p{
+  font-size: 12px;
+}
+
+
+.how-to-give-list {
+  list-style: none;
+}
+.how-to-give-list li:before{
+  content: '✓ ';
+}
+
+.give-btn {
+    width: auto;
+}
+
+.mission{
+    white-space: pre-line;
+}
+
+.jumbotron {
+    margin-bottom: 1rem;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .card{
+   height: auto;
+    padding: 30px;
+}
+
+.verified-box{
+}
