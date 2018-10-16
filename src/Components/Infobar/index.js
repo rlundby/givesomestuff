@@ -9,7 +9,7 @@ export default class Infobar extends Component {
         return (
             <div className="container-fluid infobar">
                 <div className="row  justify-content-center card-deck">
-                    <div className="col-md-2 text-center card">
+                    <div className="col-md-2 text-center card shadow">
                         <div className="service-box">
                             <div className="card-body">
                                 <h3 className="card-title">1.</h3>
@@ -18,7 +18,7 @@ export default class Infobar extends Component {
 
                         </div>
                     </div>
-                    <div className="col-md-2 text-center card">
+                    <div className="col-md-2 text-center card shadow">
                         <div className="service-box">
                             <div className="card-body">
                             <h3 className="card-title">2.</h3>
@@ -26,7 +26,7 @@ export default class Infobar extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-2 text-center card">
+                    <div className="col-md-2 text-center card shadow">
                         <div className="service-box">
                             <div className="card-body">
                             <h3 className="card-title">3.</h3>

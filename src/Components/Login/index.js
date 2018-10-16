@@ -33,9 +33,10 @@ class Login extends React.Component {
             return <Redirect to="/"/>
         }
         return (
-            <div class="container login">
-                <div class="col-md-6 card">
-                    <h1>Logga in för att fortsätta.</h1>
+            <div className="container login">
+                <div className="col-md-6 card">
+                    <img src="./Untitled-3.png" className="img-fluid"  alt="logo"/>
+                    <h2 className="text-center">Logga in för att fortsätta.</h2>
                     <form className='tab-pane' id='signin'>
                         <div className="form-group">
                             <label htmlFor="username">Username</label>

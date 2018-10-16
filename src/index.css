@@ -138,6 +138,12 @@ h3{
     padding: 30px;
 }
 
+.login img {
+    width: 200px;
+    height: auto;
+    margin: auto;
+}
+
 .verified-box{
 }
 
@@ -148,4 +154,28 @@ h3{
 }
 .org-list button{
     margin-right: 10px;
+}
+
+.article {
+    background: url("https://images.pexels.com/photos/701337/pexels-photo-701337.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    margin: 10px;
+    color: white;
+    padding: 20px;
+}
+.article hr {
+     border-color: #717171;
+ }
+
+.article-2 {
+    background: url("https://images.pexels.com/photos/9374/lights-night-lens-blur.jpg");
+    background-position: center;
+}
+
+.article a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }

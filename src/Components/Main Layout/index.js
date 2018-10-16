@@ -4,6 +4,7 @@ import Navigation from "../Navigation";
 import Jumbatron from "../Jumbatron";
 import Infobar from "../Infobar";
 import MainContent from "../Main Content";
+import Articles from "../Main Content/Articles";
 
 class MainLayout extends Component {
     render() {
@@ -17,6 +18,7 @@ class MainLayout extends Component {
                 <Jumbatron/>
                 <Infobar/>
                 <MainContent/>
+                <Articles/>
             </F>
         );
     }
