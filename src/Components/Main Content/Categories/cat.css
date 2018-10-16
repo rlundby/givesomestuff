@@ -1,0 +1,27 @@
+.cat-body {
+    max-width: 348px;
+    max-height: 133px;
+}
+
+.cat-body i {
+    color: #d4145a;
+    transition: all 0.5s ease-in-out;
+}
+
+.cat-body h4{
+    transition: all 0.5s ease;
+}
+
+.cat-body:hover h4{
+    font-size: 20px;
+}
+
+.cat-body:hover i{
+    color: #762bbd;
+    font-size: 60px;
+}
+
+.cat-body:nth-child(2) {
+    background: green;
+    color: white
+}

@@ -46,10 +46,10 @@ export default class MainDisplay extends Component {
         }
         return (
             <F>
-                <div className="container main-display card" id="test">
+                <div className="container-fluid main-display card" id="test">
                     <div className="row pb-3 card-body">
                         <div className="col-12 align-center m-4 card-title">
-                            <h5 className="text-center">Välj en organisation</h5>
+                            <h3 className="text-center card-title">Välj en organisation</h3>
                         </div>
                         <div className="col-md-4 col-xs-12">
                             <div className="list-group" id="list-tab" role="tablist">

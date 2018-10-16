@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(109, 134, 101, 0.98);
+  background: rgba(92, 92, 92, 0.98);
 }
 
 code {
@@ -14,16 +14,38 @@ code {
     monospace;
 }
 
+.navbar-brand img {
+    height: auto;
+    width: 200px
+}
+.nav-link {
+    color: #d4145a;
+    font-size: 20px;
+    border-right: 1px solid lightgray;
+    padding-right: 50px;
+}
+
+.last-link {
+    border: none;
+    padding-right: 0;
+}
+
 .heroImage {
-  background-image: url("https://images.pexels.com/photos/220116/pexels-photo-220116.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-image: url("https://images.pexels.com/photos/1252869/pexels-photo-1252869.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
 }
 
-.infobar {
-  background: white;
+h3{
+    color: #d4145a;
+}
+
+
+
+.album {
+    background-color: rgba(205, 205, 205, 0.98);
 }
 
 .service-box {
@@ -39,7 +61,12 @@ code {
     cursor: pointer;
 }
 .main-display {
-    background: white;
+    background-color: rgba(205, 205, 205, 0.98);
+    margin-top: 10px;
+}
+.album {
+    width: 95vw;
+    margin: auto;
 }
 
 .main-display .row{

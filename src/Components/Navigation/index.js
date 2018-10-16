@@ -2,20 +2,34 @@ import React, { Component } from 'react';
 
 export default class Navigation extends Component {
 
-    componentDidMount() {
+    constructor(props) {
+        super(props);
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.state = {
+            collapsed: true,
+        };
+    }
+
+    toggleNavbar() {
+        this.setState({
+            collapsed: !this.state.collapsed,
+        });
     }
 
     render() {
+        const collapsed = this.state.collapsed;
+        const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
+        const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="/">Våga välgörenhet - En guide till att välja rätt</a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
+                <a className="navbar-brand" href="/"><img src="./Untitled-3.png"  alt="logo"/></a>
+                <button onClick={this.toggleNavbar} className={classTwo} type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className={classOne} id="navbarSupportedContent">
                     <ul className="nav justify-content-end w-100">
                         <li className="nav-item active">
                             <a className="nav-link" href="/">Startsidan <span className="sr-only">(current)</span></a>
@@ -24,7 +38,7 @@ export default class Navigation extends Component {
                             <a className="nav-link" href="/90konto">Vad är ett 90-konto?</a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link" href="/vanor">Hur skänker vi svenskar?</a>
+                            <a className="nav-link last-link" href="/vanor">Hur skänker vi svenskar?</a>
                         </li>
                     </ul>
                 </div>

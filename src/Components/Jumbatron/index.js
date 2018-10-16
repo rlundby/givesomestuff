@@ -7,7 +7,7 @@ export default class Jumbatron extends Component {
 
     render() {
         return (
-            <div className="jumbotron jumbotron-fluid heroImage">
+            <div className="jumbotron jumbotron-fluid heroImage shadow ">
                 <div className="container">
                     <h1 className="display-4">Hej kompis!</h1>
                     <p className="lead">Vill du hjälpa andra men tycker det är svårt att veta vem man kan lita på?</p>
