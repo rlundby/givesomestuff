@@ -62,6 +62,29 @@ const Organisations = {
             source: 'https://www.redcross.se/om-oss/',
             misc: 'Röda Korset har en omfattande sida som visar exakt hur din gåva spenderas och vart pengarna går. Du hittar den här: https://www.redcross.se/om-oss/ekonomi/sa-har-anvands-din-gava/ ',
             extralink: 'https://www.redcross.se/om-oss/ekonomi/sa-har-anvands-din-gava/'
+        },
+        {
+            name: 'Läkare utan gränser',
+            image: 'https://images.pexels.com/photos/42273/doctor-medical-medicine-health-42273.jpeg?auto=compress&cs=tinysrgb&h=350',
+            table: {
+                name: 'Läkare utan gränser',
+                category: 'Katastrofer',
+                area: 'Internationellt',
+                verified: 'Ja'
+            },
+            checkboxes: ['Insamlingskontroll', 'Swish', 'Läkare avlönas', '88% går till ändamålet', 'Kontrollerar sina bidrag'],
+            notChecked: ['Generalsekreteraren tjänar 62 342kr'],
+            about: `
+Bildspel i fullskärm
+
+Läkare Utan Gränser är en medicinsk humanitär organisation som räddar liv och lindrar nöd där vi behövs mest. I över 45 år har vi bistått människor som drabbats av kriser, krig och naturkatastrofer, oavsett politisk åsikt, religion eller etnisk tillhörighet.
+
+Läkare Utan Gränser, eller Médecins Sans Frontières (MSF), startades 1971 i Paris av en grupp läkare och journalister. De ansåg att det behövdes en oberoende hjälporganisation som talade ut om övergrepp och missförhållanden, och satte människor före politik. Idag arbetar Läkare Utan Gränser i runt 70 länder runt om i världen.`,
+            mission: `Läkare Utan Gränsers insatser är främst medicinska. Vi utför vårt arbete med respekt för medicinsk etik, särskilt skyldigheten att ge vård utan att orsaka skada för individer eller grupper. Vi respekterar patienternas autonomi, patientsekretessen och rätten till informerat samtycke. Vi behandlar våra patienter med värdighet och med respekt för deras kulturella och religiösa övertygelser. I enlighet med dessa principer gör Läkare Utan Gränser allt för att erbjuda högkvalitativ medicinsk vård till alla patienter.`,
+            howtosupport: ['Månadsgivare', 'Gåva', 'Volontär', 'Minnesgåva', 'Aktiegåvor'],
+            link: 'https://lakareutangranser.se/stod-oss',
+            source: 'https://lakareutangranser.se/om-oss',
+            misc:  'Läkare utan gränser tar aldrig emot bidrag från företag som huvudsakligen är inom tobaks, alkohol, vapen, olja/gas, diamant, guld eller läkemedelsindustrin.'
         }
     ],
     sickness: [
@@ -84,6 +107,26 @@ const Organisations = {
             link: 'https://www.barncancerfonden.se/jag-vill-bidra/',
             source: 'https://www.barncancerfonden.se/om-barncancerfonden/',
             misc: 'Barncancerfonden presenterar hur höga löner och arvoden som de i kanslit mottager. Det kan man läsa om här: https://www.barncancerfonden.se/om-barncancerfonden/oppenhet-och-transparens/loner-och-arvoden/ '
+        },
+        {
+            name: 'Cancerfonden',
+            image: 'https://images.pexels.com/photos/1243364/pexels-photo-1243364.jpeg',
+            table: {
+                name: 'Cancerfonden',
+                category: 'Cancer',
+                area: 'Sverige',
+                verified: 'Ja'
+            },
+            checkboxes: ['Insamlingskontroll', 'Swish', 'Har bra rykte enligt undersökningar'],
+            notChecked: ['Redovisar inte arvoden', 'Tidigare höga löner'],
+            about: `Cancerfonden föddes ur ett samhällsbehov, som en reaktion på den dåliga prognos för cancersjukdomar som rådde i Sverige på 1950-talet. Bristen på kunskap om cancer begränsade möjligheten att behandla och förebygga sjukdomen.
+
+Statens bidrag till forskning var inte tillräckligt för att täcka cancerforskningens behov. Två privatpersoner tog därför initiativ och ansvar för att öka cancerforskningens finansiering genom att starta insamlingar till forskning. Ebba Andersson och Morri Nidén hade båda haft cancer och överlevt (läs mer om vår historia längre ner). Deras drivkraft och engagemang har varit en inspiration i Cancerfondens verksamhet ända sedan starten 1951.`,
+            mission: `Cancerfondens vision är att besegra cancer. Målet är att färre personer i Sverige ska drabbas av cancer och fler överleva sjukdomen. Vi arbetar också för att vården ska vara så bra som möjligt för dem som insjuknar och att deras närstående får stöd och hjälp. För att komma närmare visionen arbetar Cancerfonden med forskningsfinansiering, kunskapsspridning och påverkansarbete.`,
+            howtosupport: ['Månadsgivare', 'Gåva', 'Insamling', 'Minnesgåva'],
+            link: 'https://www.cancerfonden.se/stod-cancerfonden',
+            source: 'https://www.cancerfonden.se/om-cancerfonden/det-har-ar-cancerfonden',
+            misc: 'Den senaste informationen om arvoden jag kunde hitta var en artikel från 2013. Där skriver man att generalsekreteraren tjänat miljoner och vid eventuellt avsked skulle hen förbli avlönad i 18 månader'
         }
     ],
     violence: [

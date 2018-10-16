@@ -8,13 +8,14 @@ export default class MainDisplay extends Component {
         org: null
     };
 
-    changeOrg(index) {
-        console.log('test');
-        let number = parseInt(index);
-        this.setState({
-            org: number
-        })
-    };
+    componentDidUpdate(){
+        if(this.state.org !== this.props.org) {
+            this.setState({
+                org: this.props.org
+            })
+        }
+    }
+
 
     render() {
         let array = Organisations[this.props.category];
@@ -55,24 +56,26 @@ export default class MainDisplay extends Component {
                                     <h3 className="text-center">Välj en organisation</h3>
 
 
-
-                            <div className="col-md-12 col-xs-12 org-list">
-                                {array.length > 0 ?  array.map((object, i) => {
-                                    return (
-                                        <button
-                                            href={'#' + i}
-                                            onClick={() => this.changeOrg(i)}
-                                            className="btn btn-lg btn-primary"
-                                            id={i}
-                                            key={i}>
-                                            {object.name}
-                                        </button>
-                                    )
-                                }) : <p>Det finns inga organisationer här just nu</p>}
+                                    <div className="col-md-12 col-xs-12 org-list">
+                                        {array.length > 0 ? array.map((object, i) => {
+                                            return (
+                                                <button
+                                                    href={'#' + i}
+                                                    onClick={() => this.props.changeOrg(i)}
+                                                    className="btn btn-lg btn-primary"
+                                                    id={i}
+                                                    key={i}>
+                                                    {object.name}
+                                                </button>
+                                            )
+                                        }) : <p>Det finns inga organisationer här just nu</p>}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                        { this.state.org !== null  ?  <Organisation details={array[this.state.org]} array={array}/> : <p><hr/></p> }
+                            {this.state.org !== null ? <Organisation details={array[this.props.org]} array={array}/> :
+                                <p>
+
+                                </p>}
                         </div>
                     </div>
                 </div>

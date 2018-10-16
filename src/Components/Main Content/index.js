@@ -5,7 +5,8 @@ import MainDisplay from "./MainDisplay";
 export default class MainContent extends Component {
 
     state = {
-        selectedCategory: null
+        selectedCategory: null,
+        org:  null
     };
 
     componentDidMount() {
@@ -19,9 +20,19 @@ export default class MainContent extends Component {
 
     selectCategory = (name) => {
         this.setState({
-            selectedCategory: name
+            selectedCategory: name,
+            org: null
         });
-        this.forceUpdate()
+
+    };
+
+    changeOrg = (i) => {
+        console.log('hej');
+        let number = parseInt(i);
+        this.setState({
+            org: number
+        });
+        console.log('hej igen');
     };
 
 
@@ -37,7 +48,7 @@ export default class MainContent extends Component {
                     </div>
                 </div>
             </div>
-        {this.state.selectedCategory !== null && <MainDisplay category={this.state.selectedCategory}/>}
+        {this.state.selectedCategory !== null && <MainDisplay category={this.state.selectedCategory} org={this.state.org} changeOrg={this.changeOrg}/>}
             </F>
         )
     }
