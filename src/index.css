@@ -72,10 +72,7 @@ h3{
 .main-display .row{
     padding-top: 5px;
 }
-.main-display > .card-body > .card-title {
-    border-bottom: 1px solid black;
-    padding-bottom: 15px;
-}
+
 
 .checkbox-container li {
     align-items: baseline;
@@ -139,9 +136,6 @@ h3{
     margin: auto;
 }
 
-.verified-box{
-}
-
 .org-list {
     display: flex;
     justify-content: center;
@@ -173,4 +167,40 @@ h3{
     color: white;
     font-weight: bold;
     font-size: 18px;
+}
+
+.category-title {
+    padding: 0;
+}
+.category-title .text-center{
+     color: white;
+ }
+.category-title-animals {
+    background: url('https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg?auto=compress&cs=tinysrgb&h=350');
+}
+
+.category-title-people {
+    background: url('https://images.pexels.com/photos/917377/pexels-photo-917377.jpeg?auto=compress&cs=tinysrgb&h=350');
+}
+.category-title-sickness{
+    background: url("https://images.pexels.com/photos/734541/pexels-photo-734541.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-title-violence {
+    background: url("https://images.pexels.com/photos/33582/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&h=350");
+    background-repeat: round;
+}
+.category-title-culture {
+    background: url('https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&h=350');
+    background-size: cover;
+}
+
+.filter {
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.42);
+    width: 100%;
+    padding: 15px;
 }

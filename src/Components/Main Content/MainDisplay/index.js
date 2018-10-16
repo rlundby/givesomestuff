@@ -47,10 +47,15 @@ export default class MainDisplay extends Component {
         return (
             <F>
                 <div className="container-fluid main-display" id="test">
-                    <div className="row pb-3 card-body">
-                        <div className="col-12 align-center m-4 card-title">
-                            <h2 className="text-center">{category}</h2>
-                            <h3 className="text-center">Välj en organisation</h3>
+                    <div className="row pb-3">
+                        <div className={"col-12 align-center card-title"}>
+                            <div className={"col-12 category-title " + 'category-title-' + this.props.category}>
+                                <div className="filter">
+                                    <h2 className="text-center">{category}</h2>
+                                    <h3 className="text-center">Välj en organisation</h3>
+
+
+
                             <div className="col-md-12 col-xs-12 org-list">
                                 {array.length > 0 ?  array.map((object, i) => {
                                     return (
@@ -66,7 +71,9 @@ export default class MainDisplay extends Component {
                                 }) : <p>Det finns inga organisationer här just nu</p>}
                             </div>
                         </div>
+                    </div>
                         { this.state.org !== null  ?  <Organisation details={array[this.state.org]} array={array}/> : <p><hr/></p> }
+                        </div>
                     </div>
                 </div>
             </F>

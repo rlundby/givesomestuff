@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto+Condensed');
+
+
+.habits-box{
+    background: black;
+    height: 100vh;
+}
+.habits-box .card{
+    background: none;
+    border: none;
+}
+.habits-box h1{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.habits-box .d-block p{
+     color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+ }
+
+.habits-box .d-block .card{
+    padding: 20px;
+}
+
+.habits-box .d-block .card h1{
+    color: white;
+    font-size: 30px;
+}
+
+/* WARNING MOBILE */
+
+
+/* FIRST ROW */
+  .infographic {
+    display: flex;
+    justify-content: center;
+}
+
+.infographic h1{
+   color: #9610e6;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.8s all ease;
+}
+
+/* SECOND ROW */
+
+.habits-box .row .col-md-3:nth-child(2) h1 {
+    color: #4a6ce6;
+}
+
+.habits-box .row .col-md-3:nth-child(2) h1:hover {
+    color: #00e64e;
+    font-size: 90px;
+}
+
+.habits-box .row .col-md-12:nth-child(1) h1 {
+    color: #e60041;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.habits-box .row .col-md-12:nth-child(1) h1 + p{
+    opacity: 0;
+    transition: 0.8s all ease;
+    font-size: 18px;
+    color: #00e64e;
+    font-weight: normal;
+    transform: translateX(100px);
+}
+
+.habits-box .row .col-md-12:nth-child(1) h1:hover + p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.habits-box .row .col-md-12:nth-child(1) h1:hover {
+    color: #f9ff17;
+    transform: translateX(100px);
+}
+
+/* THIRD ROW */
+
+
+.third-row .col-md-4 h1 {
+    font-size: 50px;
+    color: #ff7815;
+}
+
+.third-row .col-md-4 .card {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline
+}
+
+.third-row .col-md-4 .card:nth-child(2) h1 {
+    margin-left: 10%;
+}
+.third-row .col-md-4 .card:nth-child(3) h1 {
+    margin-left: 20%;
+}
+
+.third-row .col-md-4 p {
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.third-row .col-md-8 h1 {
+    font-size: 40px;
+    color: #0085ff;
+}
+
+.third-row .col-md-8 h1:hover {
+    font-size: 40px;
+    color: #ae2aff;
+}
+
+
+
+.infographic h1:hover{
+    font-size: 50px;
+    color: #e60024;
+}
+
+.infographic p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
