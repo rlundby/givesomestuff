@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(92, 92, 92, 0.98);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 code {
@@ -45,7 +45,7 @@ h3{
 
 
 .album {
-    background-color: rgba(205, 205, 205, 0.98);
+    background-color: rgba(255, 255, 255, 0.98);
 }
 
 .service-box {
@@ -61,7 +61,7 @@ h3{
     cursor: pointer;
 }
 .main-display {
-    background-color: rgba(205, 205, 205, 0.98);
+    background-color: rgba(255, 255, 255, 0.98);
     margin-top: 10px;
 }
 .album {
@@ -139,4 +139,12 @@ h3{
 }
 
 .verified-box{
+}
+
+.org-list {
+    display: flex;
+    justify-content: center;
+}
+.org-list button{
+    margin-right: 10px;
 }

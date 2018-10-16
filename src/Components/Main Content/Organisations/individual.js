@@ -16,6 +16,7 @@ export default class Organisation extends Component {
             <F>
                 <div className="col-8">
                     <div className="row">
+                        <div className="col-md-12"><h1 className="text-center">{details.name}</h1></div>
                         <div className="col-md-8">
                             <img className="img-fluid"
                                  src={details.image} alt="goat"/>
