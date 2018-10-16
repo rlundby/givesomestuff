@@ -17,7 +17,7 @@ export default class Organisation extends Component {
 
                     <div className="col-md-12"><h1 className="text-center">{details.name}</h1></div>
 
-                    <div className="row no-gutters">
+                    <div className="row">
                         <div className="col-md-3">
 
                         </div>
@@ -72,6 +72,8 @@ export default class Organisation extends Component {
                         </div>
 
                         <div className="col-md-3">
+                            <div className="checkbox-container">
+
                             <h5 className="text-center">Bra</h5>
                             <hr/>
                             <ul>
@@ -103,6 +105,7 @@ export default class Organisation extends Component {
                                 })
                                 }
                             </ul>
+                            </div>
                         </div>
 
                         <div className="col-md-3 offset-md-3 card">

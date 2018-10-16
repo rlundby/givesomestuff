@@ -77,16 +77,11 @@ h3{
     padding-bottom: 15px;
 }
 
-.checkbox-container {
-  background-color: whitesmoke;
-  border-radius: 5px 5px;
-  border: 1px solid lightgray;
-}
-.checkbox-container .col-md-6:first-child{
-    border-right: 1px solid lightgray;
-}
 .checkbox-container li {
     align-items: baseline;
+}
+.checkbox-container li i {
+    margin-right: 5px;
 }
 
 .checkbox {
