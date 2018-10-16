@@ -6,22 +6,25 @@ export default class Organisation extends Component {
     render() {
         let details;
 
-        if(!this.props.details){
+        if (!this.props.details) {
             details = this.props.array[0]
         } else {
-           details = this.props.details
+            details = this.props.details
         }
 
         return (
             <F>
-                <div className="col-8">
-                    <div className="row">
-                        <div className="col-md-12"><h1 className="text-center">{details.name}</h1></div>
-                        <div className="col-md-8">
+                <div className="col-12">
+                    <div className="col-md-12"><h1 className="text-center">{details.name}</h1></div>
+
+                    <div className="row checkbox-container mt-2">
+                        <div className="col-md-4 col-offset-2">
                             <img className="img-fluid"
                                  src={details.image} alt="goat"/>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-2">
+                            <h5 className="text-center">Information</h5>
+                            <hr/>
                             <table className="table table-striped">
                                 <tbody className="">
                                 <tr>
@@ -44,9 +47,7 @@ export default class Organisation extends Component {
 
                             </table>
                         </div>
-                    </div>
-                    <div className="row checkbox-container mt-2">
-                        <div className="col-md-6">
+                        <div className="col-md-2">
                             <h5 className="text-center">Bra</h5>
                             <hr/>
                             <ul>
@@ -54,53 +55,53 @@ export default class Organisation extends Component {
                                     return (
                                         <li key={i} className="row">
 
-                                                <i className="fas fa-check-circle text-success"></i>
-                                                <p>{object}</p>
+                                            <i className="fas fa-check-circle text-success"></i>
+                                            <p>{object}</p>
 
                                         </li>
                                     )
-                                    })
+                                })
                                 }
                             </ul>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-2">
                             <h5 className="text-center">Mindre bra</h5>
                             <hr/>
                             <ul>
-                            {details.notChecked.map((object, i) => {
-                                return (
-                                    <li key={i} className="row">
+                                {details.notChecked.map((object, i) => {
+                                    return (
+                                        <li key={i} className="row">
 
-                                        <i className="fas fa-exclamation-circle text-warning"></i>
-                                        <p>{object}</p>
+                                            <i className="fas fa-exclamation-circle text-warning"></i>
+                                            <p>{object}</p>
 
-                                    </li>
-                                )
-                            })
-                            }
+                                        </li>
+                                    )
+                                })
+                                }
                             </ul>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-12 card">
+                        <div className="col-md-6 card">
                             <div className="card-body">
                                 <h3 className="text-center card-title">Om {details.name}</h3>
                                 <p>"{details.about}"</p>
                                 <p> -Citat från <a href={details.source}>{details.name}</a></p>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 card">
+
+
+                        <div className="col-md-6 card">
                             <div className="card-body mission">
                                 <h3 className="text-center card-title">Vad gör {details.name}?</h3>
                                 <p>"{details.mission}"</p>
                                 <p> -Citat från <a href={details.source}>{details.name}</a></p>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 card">
+
+
+                        <div className="col-md-6 card">
                             <div className="card-body">
                                 <h3 className="text-center card-title">Hur kan jag stödja {details.name}?</h3>
                                 <div className="row">
@@ -119,14 +120,15 @@ export default class Organisation extends Component {
                                         </ul>
                                     </div>
                                     <div className="col-md-6 d-flex flex-column  justify-content-center">
-                                        <a href={details.link} target="_blank" rel="noopener noreferrer"  className="btn btn-lg btn-primary align-baseline give-btn"> Stöd {details.name}</a>
+                                        <a href={details.link} target="_blank" rel="noopener noreferrer"
+                                           className="btn btn-lg btn-primary align-baseline give-btn"> Stöd {details.name}</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 card">
+
+
+                        <div className="col-md-4 card">
                             <div className="card-body">
                                 <h3 className="text-center card-title">Transparens/Pålitlighet</h3>
                                 <p>{details.misc}</p>

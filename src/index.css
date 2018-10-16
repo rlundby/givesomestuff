@@ -144,6 +144,7 @@ h3{
 .org-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .org-list button{
     margin-right: 10px;
