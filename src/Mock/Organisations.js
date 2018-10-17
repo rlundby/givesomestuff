@@ -10,7 +10,7 @@ const Organisations = {
                 verified: 'Ja'
             },
             checkboxes: ['Insamlingskontroll', 'Ekonomisk berättelse', 'Swish'],
-            notChecked: ['Inga exakta nummer'],
+            notChecked: ['Skriver inte exakt hur stor del av gåvan som går till  ändamålet'],
             about: `Djurens Rätt är Sveriges största djurrätts- och djurskyddsorganisation. De är partipolitiskt obundna
              och arbetar för en värld där djur respekteras som kännande individer med rätt till sina egna liv. Djurens Rätt
              är beroende av frivilligt stöd för att kunna hjälpa djuren. Det är alla medlemmar och gåvogivare som är Djurens Rätt.`,
@@ -33,7 +33,7 @@ const Organisations = {
                 verified: 'Ja'
             },
             checkboxes: ['Insamlingskontroll', 'År 2015 gick 87% till ändamålet', 'Swish'],
-            notChecked: ['Inga exakta nummer', 'Generalsekreteraren arvodas med 102000kr'],
+            notChecked: ['Generalsekreteraren arvodas med 102 000kr/månad'],
             about: `WWF, World Wide Fund for Nature, är en oberoende och partipolitiskt obunden naturvårdsorganisation. Med fler än fem miljoner supportrar runt om i världen är WWF en av världens ledande ideella naturvårdsorganisationer med verksamhet i över 100 länder. WWF bedriver ett mycket aktivt naturvårdsarbete i fält, men också i maktens korridorer och vid de internationella förhandlingsborden. WWF arbetar aktivt för att hitta lösningar för att hejda den hotande klimatförändringen och arbetar med ett stort antal projekt runt om i världen.  `,
             mission: `WWF arbetar för att hejda förstörelsen av jordens naturliga livsmiljöer och bygga en framtid där människor lever i harmoni med naturen. WWF bedriver klimat- och naturvårdsarbete där akuta eller långsiktiga åtgärder är nödvändiga för att bromsa klimatförändringen och bevara utrotningshotade växt- och djurarter eller hela naturområden. Miljöproblemen känner inga gränser. Därför är det viktigt att arbeta lokalt med ett globalt perspektiv. 
             `,
@@ -54,7 +54,7 @@ const Organisations = {
                 verified: 'Ja'
             },
             checkboxes: ['Insamlingskontroll', 'Visar exakt hur din gåva spenderas', 'Swish'],
-            notChecked: ['Arvoden finansieras av medlemsintäkter', 'Ordförande tjänar 65 500kr i månaden', 'Generalsekrteraren tjänar 95 000kr i månaden'],
+            notChecked: ['Arvoden finansieras av medlemsintäkter', 'Ordförande tjänar 65 500kr/månaden', 'Generalsekrteraren tjänar 95 000kr i månaden'],
             about: `Röda Korset är världens främsta katastroforganisation. Vi finns över hela världen och består av miljontals frivilliga som bestämt sig för att hjälpa andra människor. Vi kämpar för att rädda liv och ge hopp. Vi delar ut mat, förebygger katastrofer och bidrar med medmänsklig värme.`,
             mission: `Genom vårt världsomspännande nätverk kan vi hjälpa på ett sätt som ingen annan organisation kan. Vi finns över hela världen och arbetar förebyggande för att katastrofer inte ska inträffa. Vi finns där om den ändå sker och vi är kvar efteråt – långt efter att andra gett sig av och medierna tystnat.`,
             howtosupport: ['Månadsgivare', 'Gåva', 'Medlem', 'Skapa Insamling', 'Second Hand', 'Testamentera', 'Shop'],
@@ -72,11 +72,9 @@ const Organisations = {
                 area: 'Internationellt',
                 verified: 'Ja'
             },
-            checkboxes: ['Insamlingskontroll', 'Swish', 'Läkare avlönas', '88% går till ändamålet', 'Kontrollerar sina bidrag'],
-            notChecked: ['Generalsekreteraren tjänar 62 342kr'],
+            checkboxes: ['Insamlingskontroll', 'Swish', 'Läkare avlönas', '88% går till ändamålet', 'Kontrollerar vart bidragen kommer ifrån'],
+            notChecked: ['Generalsekreteraren tjänar 62 342kr/månad'],
             about: `
-Bildspel i fullskärm
-
 Läkare Utan Gränser är en medicinsk humanitär organisation som räddar liv och lindrar nöd där vi behövs mest. I över 45 år har vi bistått människor som drabbats av kriser, krig och naturkatastrofer, oavsett politisk åsikt, religion eller etnisk tillhörighet.
 
 Läkare Utan Gränser, eller Médecins Sans Frontières (MSF), startades 1971 i Paris av en grupp läkare och journalister. De ansåg att det behövdes en oberoende hjälporganisation som talade ut om övergrepp och missförhållanden, och satte människor före politik. Idag arbetar Läkare Utan Gränser i runt 70 länder runt om i världen.`,
@@ -118,7 +116,7 @@ Läkare Utan Gränser, eller Médecins Sans Frontières (MSF), startades 1971 i 
                 verified: 'Ja'
             },
             checkboxes: ['Insamlingskontroll', 'Swish', 'Har bra rykte enligt undersökningar'],
-            notChecked: ['Redovisar inte arvoden', 'Tidigare höga löner'],
+            notChecked: ['Redovisar inte arvoden', 'Tidigare haft högt avlönade i organisationen'],
             about: `Cancerfonden föddes ur ett samhällsbehov, som en reaktion på den dåliga prognos för cancersjukdomar som rådde i Sverige på 1950-talet. Bristen på kunskap om cancer begränsade möjligheten att behandla och förebygga sjukdomen.
 
 Statens bidrag till forskning var inte tillräckligt för att täcka cancerforskningens behov. Två privatpersoner tog därför initiativ och ansvar för att öka cancerforskningens finansiering genom att starta insamlingar till forskning. Ebba Andersson och Morri Nidén hade båda haft cancer och överlevt (läs mer om vår historia längre ner). Deras drivkraft och engagemang har varit en inspiration i Cancerfondens verksamhet ända sedan starten 1951.`,
@@ -140,7 +138,7 @@ Statens bidrag till forskning var inte tillräckligt för att täcka cancerforsk
                 verified: 'Ja'
             },
             checkboxes: ['Insamlingskontroll', 'Swish', 'Styrelsen arbetar ideellt'],
-            notChecked: ['Generalsekreteraren tjänar 93 000kr i månaden'],
+            notChecked: ['Generalsekreteraren tjänar 93 000kr/mån'],
             about: `Friends är en barnrättsorganisation som arbetar mot mobbning. Det gör vi genom att utbilda skolor, förskolor och idrottsföreningar, samt genom att driva opinion för att skapa förändring på samhällsnivå.`,
             mission: `Friends har utvecklat omfattande utbildningsprogram som vänder sig till förskolor, skolor och idrottsföreningar. Förskolan, skolan eller föreningen kontaktar själva Friends och därefter åker vi dit och utbildar. Vi hjälper framför allt till med det förebyggande arbetet och fokuserar på långsiktighet och helhetstänkande. För att nå resultat anser vi att man måste inbegripa alla som finns omkring barnet – personal/ledare, föräldrar och andra barn och unga. Vuxna har alltid det yttersta ansvaret så Friends börjar därför med att förankra arbetet hos dem för att sedan gå vidare med barnen. Vi ger kunskap och konkreta verktyg så att skolan eller föreningen kan arbeta vidare på egen hand, men vi finns även med som stöd i deras arbete.`,
             howtosupport: ['Månadsgivare', 'Gåva', 'Egen insamling'],
