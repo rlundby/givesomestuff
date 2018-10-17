@@ -5,8 +5,11 @@ import Jumbatron from "../Jumbatron";
 import Infobar from "../Infobar";
 import MainContent from "../Main Content";
 import Articles from "../Main Content/Articles";
+import Footerbar from "../Footer";
 
 class MainLayout extends Component {
+
+
     render() {
         let auth = sessionStorage.getItem('auth');
         if(!auth) {
@@ -19,6 +22,7 @@ class MainLayout extends Component {
                 <Infobar/>
                 <MainContent/>
                 <Articles/>
+                <Footerbar/>
             </F>
         );
     }

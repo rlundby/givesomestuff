@@ -13,12 +13,15 @@
 }
 
 .cat-body:hover h4{
-    font-size: 20px;
+    font-size: 16px;
+
 }
 
 .cat-body:hover i{
     color: #762bbd;
     font-size: 60px;
+    margin: 0 auto;
+    padding: 6px;
 }
 
 .cat-body:nth-child(2) {

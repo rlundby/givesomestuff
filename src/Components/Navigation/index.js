@@ -21,7 +21,8 @@ export default class Navigation extends Component {
         const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
         const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
         return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <header>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <a className="navbar-brand" href="/"><img src="./Untitled-3.png"  alt="logo"/></a>
                 <button onClick={this.toggleNavbar} className={classTwo} type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,6 +44,7 @@ export default class Navigation extends Component {
                     </ul>
                 </div>
             </nav>
+            </header>
         )
     }
 }

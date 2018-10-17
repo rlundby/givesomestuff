@@ -2,6 +2,7 @@ import React, {Component, Fragment as F} from 'react';
 import {Redirect} from 'react-router-dom';
 import Navigation from "../Navigation";
 import './habits.css'
+import Footerbar from "../Footer";
 
 
 class Habits extends Component {
@@ -81,10 +82,11 @@ class Habits extends Component {
                             </div>
                         </div>
                     </div>
-                    <p className="text-secondary font-italic fixed-bottom">Obs. Denna datan bygger på en undersökning av
-                        Välgörenhetsbarometern. Ladda ner den <a
-                            href="https://valgorenhetsbarometern.se/rapporter/">här</a>.</p>
+                    <div>
+
+                    </div>
                 </div>
+                <Footerbar/>
             </F>
         );
     }

@@ -1,6 +1,7 @@
 import React, {Component, Fragment as F} from 'react';
 import {Redirect} from 'react-router-dom';
 import Navigation from "../Navigation";
+import Footerbar from "../Footer";
 
 
 class Verified extends Component {
@@ -83,6 +84,7 @@ class Verified extends Component {
                     </div>
 
                 </div>
+                <Footerbar/>
             </F>
         );
     }
