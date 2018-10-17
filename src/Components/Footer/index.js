@@ -26,7 +26,7 @@ class Footerbar extends Component {
                                 ovetandet om hur organisationen spenderas ens bidrag den största faktorn till varför man
                                 inte vågar skänka.</p>
                             <p>Förhoppningsvis, genom att presentera fakta här om vilka regler som finns, så är det enklare för dig att hitta en välgörenhet som passar dig, och som du vågar skänka till.</p>
-                            <h6>Om inget annat presenteras så är källan alltid organisationens egen hemsida.</h6>
+                            <h6>OBS: Om inget annat presenteras så är källan alltid organisationens egen hemsida.</h6>
                         </div>
                         <div className="col-md-2 contact">
                             <h5>Har du tankar, åsikter eller kommentarer?</h5>
