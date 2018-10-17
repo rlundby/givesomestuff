@@ -14,7 +14,7 @@ class Login extends React.Component {
 
     handleSignInSubmit(event) {
        event.preventDefault();
-       if(this.state.username === 'guest' && this.state.password === '123abc4') {
+       if(this.state.username === 'guest' || this.state.username === 'Guest' && this.state.password === '123abc4') {
            sessionStorage.setItem('auth', 'yes');
            this.setState({username: '', password: ''})
        } else {
@@ -37,7 +37,7 @@ class Login extends React.Component {
                 <div className="col-md-6 card">
                     <img src="./Untitled-3.png" className="img-fluid"  alt="logo"/>
                     <h2 className="text-center">Logga in för att fortsätta.</h2>
-                    <form className='tab-pane' id='signin'>
+                    <form className='tab-pane' id='signin' action={"submit"}>
                         <div className="form-group">
                             <label htmlFor="username">Username</label>
                             <input type="text" className="form-control" name="username"
@@ -49,7 +49,7 @@ class Login extends React.Component {
                             <input type="password" className="form-control" name="password"
                                    onChange={this.handleChange}/>
                         </div>
-                        <button type="button" onClick={this.handleSignInSubmit} className='btn btn-primary'>Sign
+                        <button type="submit" onClick={this.handleSignInSubmit} className='btn btn-primary'>Sign
                             In
                         </button>
                     </form>
