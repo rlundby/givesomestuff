@@ -10,7 +10,7 @@ const Organisations = {
                 verified: 'Ja'
             },
             checkboxes: ['Insamlingskontroll', 'Ekonomisk berättelse', 'Swish'],
-            notChecked: ['Skriver inte exakt hur stor del av gåvan som går till  ändamålet'],
+            notChecked: ['Skriver inte exakt hur stor del av gåvan som går till ändamålet'],
             about: `Djurens Rätt är Sveriges största djurrätts- och djurskyddsorganisation. De är partipolitiskt obundna
              och arbetar för en värld där djur respekteras som kännande individer med rätt till sina egna liv. Djurens Rätt
              är beroende av frivilligt stöd för att kunna hjälpa djuren. Det är alla medlemmar och gåvogivare som är Djurens Rätt.`,
@@ -54,7 +54,7 @@ const Organisations = {
                 verified: 'Ja'
             },
             checkboxes: ['Insamlingskontroll', 'Visar exakt hur din gåva spenderas', 'Swish'],
-            notChecked: ['Arvoden finansieras av medlemsintäkter', 'Ordförande tjänar 65 500kr/månaden', 'Generalsekrteraren tjänar 95 000kr i månaden'],
+            notChecked: ['Arvoden finansieras av medlemsintäkter', 'Ordförande tjänar 65 500kr/månaden', 'Generalsekreteraren tjänar 95 000kr i månaden'],
             about: `Röda Korset är världens främsta katastroforganisation. Vi finns över hela världen och består av miljontals frivilliga som bestämt sig för att hjälpa andra människor. Vi kämpar för att rädda liv och ge hopp. Vi delar ut mat, förebygger katastrofer och bidrar med medmänsklig värme.`,
             mission: `Genom vårt världsomspännande nätverk kan vi hjälpa på ett sätt som ingen annan organisation kan. Vi finns över hela världen och arbetar förebyggande för att katastrofer inte ska inträffa. Vi finns där om den ändå sker och vi är kvar efteråt – långt efter att andra gett sig av och medierna tystnat.`,
             howtosupport: ['Månadsgivare', 'Gåva', 'Medlem', 'Skapa Insamling', 'Second Hand', 'Testamentera', 'Shop'],
